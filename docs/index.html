@@ -1,1 +1,59 @@
-<!DOCTYPE html><html><head><title>Card Calculator</title><link rel="stylesheet" href="./style.001c4727.css"></head><body> <h1>Card Calculator</h1> <label for="card-number">Card Number:</label> <input type="text" id="card-number"> <button onclick="addValue('2')">2</button> <button onclick="addValue('3')">3</button> <button onclick="addValue('4')">4</button> <button onclick="addValue('5')">5</button> <button onclick="addValue('6')">6</button> <button onclick="addValue('7')">7</button> <button onclick="addValue('8')">8</button> <button onclick="addValue('9')">9</button> <button onclick="addValue('T')">T</button> <button onclick="addValue('J')">J</button> <button onclick="addValue('Q')">Q</button> <button onclick="addValue('K')">K</button> <button onclick="addValue('A')">A</button> <br> <button onclick="addValue('♠')">♠</button> <button onclick="addValue('♥')">♥</button> <button onclick="addValue('♦')">♦</button> <button onclick="addValue('♣')">♣</button> <div style="margin-top:30px;margin-bottom:20px;"> <p id="result"></p> </div> <button onclick="cal()" style="margin-bottom:10px;">Calculate</button>&nbsp; <button onclick="reset()">Reset</button> <script src="./card.c5374c30.js"></script> </body></html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.e308ff8e.css">
+<script src="style.e308ff8e.js"></script></head>
+
+<body>
+  <div class="container">
+    <h1>Card Calculator</h1>
+
+    <div class="card-input">
+      <label for="card-number">Card Number:</label>
+      <input type="text" id="card-number">
+    </div>
+
+    <br>
+
+    <div class="buttons-row">
+      <button onclick="addValue('2')">2</button>
+      <button onclick="addValue('3')">3</button>
+      <button onclick="addValue('4')">4</button>
+      <button onclick="addValue('5')">5</button>
+      <button onclick="addValue('6')">6</button>
+      <button onclick="addValue('7')">7</button>
+      <button onclick="addValue('8')">8</button>
+      <button onclick="addValue('9')">9</button>
+      <button onclick="addValue('T')">T</button>
+      <button onclick="addValue('J')">J</button>
+      <button onclick="addValue('Q')">Q</button>
+      <button onclick="addValue('K')">K</button>
+      <button onclick="addValue('A')">A</button>
+    </div>
+
+    <br>
+
+    <div class="buttons-row">
+      <button onclick="addValue('s')">♠</button>
+      <button onclick="addValue('h')">♥</button>
+      <button onclick="addValue('d')">♦</button>
+      <button onclick="addValue('c')">♣</button>
+    </div>
+
+    <br>
+
+    <div class="result">
+      <p id="result"></p>
+      <button onclick="cal()">Calculate</button>
+      <button onclick="reset()">reset</button>
+    </div>
+  </div>
+
+  <script src="card.e31bb0bc.js"></script>
+
+</body>
+
+</html>
