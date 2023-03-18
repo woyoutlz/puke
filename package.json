@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cssnano": "^4.1.11",
     "poker-odds-calculator": "^0.3.1",
     "pokersolver": "^2.1.4",
     "prompt-sync": "^4.2.0",
@@ -18,7 +19,6 @@
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.3.0",
-    "cssnano": "^5.1.15",
     "postcss": "^8.2.15",
     "vue-template-compiler": "^2.7.14"
   }
