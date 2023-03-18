@@ -1,3 +1,5 @@
+## demo
+https://woyoutlz.github.io/puke/
 ## 功能
 可以预估自己手牌的胜率，根据牌面不断变化
 ## 下一步
