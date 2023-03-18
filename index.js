@@ -20,10 +20,22 @@ window.cal = function () {
   const element = document.getElementById("result");
   //修改文本内容
   element.textContent = `计算中...`;
-  const result = monteCarloSimulation(p, b, 100000);
-  console.log(p, b, result)
-  //修改文本内容
-  element.textContent = `win:${(result.winRate * 100).toFixed(2)},tie:${(result.tieRate * 100).toFixed(2)}`;
+  setTimeout(function () {
+    let result
+    //修改文本内容
+    const element = document.getElementById("result");
+    try {
+      result = monteCarloSimulation(p, b, 10000);
+      console.log(p, b, result)
+      element.textContent = `win:${(result.winRate * 100).toFixed(2)},tie:${(result.tieRate * 100).toFixed(2)}`;
+    } catch (e) {
+      element.textContent = `error:${e}`;
+    }
+  })
+  // const result = monteCarloSimulation(p, b, 100000);
+  // console.log(p, b, result)
+  // //修改文本内容
+  // element.textContent = `win:${(result.winRate * 100).toFixed(2)},tie:${(result.tieRate * 100).toFixed(2)}`;
 }
 window.reset = function () {
   var cardNumber = document.getElementById("card-number");
